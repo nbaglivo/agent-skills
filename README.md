@@ -18,4 +18,18 @@ Next.js component placement and naming conventions for App Router projects.
 **Categories covered:**
 - **File naming** — kebab-case for files (`hero-section.tsx`), PascalCase in code
 - **Placement rules** — `_components` for route-specific components, `components/` for shared UI
-- **Decision flow** — when to colocate vs. move to shared folders 
+- **Decision flow** — when to colocate vs. move to shared folders
+
+### raycast-extension-review
+
+Create and review Raycast extensions against official Store requirements. Fetches the latest docs to stay current.
+
+**Use when:**
+- Building new Raycast extensions
+- Preparing for Store submission
+- Reviewing `package.json` or manifest
+- Answering questions about Raycast extension guidelines
+
+**Categories covered:**
+- **Workflow** — fetch current guidelines from Raycast developer docs, apply them, report findings
+- **Principles** — docs as source of truth, cite sources for verification
