@@ -49,3 +49,7 @@ Architecture Decision Records (ADRs): when to capture decisions, link plans to A
 **Categories covered:**
 - **Plans → ADRs** — reflect settled architectural choices in ADRs; ask if it is unclear whether something warrants one
 - **Supersession** — new ADR states the new decision, links what it replaces; optional `Superseded by` frontmatter on the old ADR, not strikethroughs in the old text
+
+### Shape-First Workflow
+
+[AI Assisted Developement Documentation](https://ai-workflow.nbaglivo.dev/)
