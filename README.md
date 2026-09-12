@@ -9,6 +9,18 @@ Skills follow the [Agent Skills](https://agentskills.io/) format.
 
 ## Available Skills
 
+### build-feature-from-prd
+
+End-to-end flow for shipping a feature starting from a PRD: PRD → milestones/issues → per-slice implementation and PR.
+
+**Use when:**
+- Handed a PRD/spec and asked to build or ship it
+- Turning a plan or spec into milestones/issues before coding
+
+**Categories covered:**
+- **Workflow** — PRD, vertical-slice breakdown, per-slice implementation, review
+- **Principles** — small independently-shippable slices, not horizontal layers
+
 ### nextjs-component-conventions
 
 Next.js component placement and naming conventions for App Router projects.
