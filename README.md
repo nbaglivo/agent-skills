@@ -62,6 +62,30 @@ Architecture Decision Records (ADRs): when to capture decisions, link plans to A
 - **Plans → ADRs** — reflect settled architectural choices in ADRs; ask if it is unclear whether something warrants one
 - **Supersession** — new ADR states the new decision, links what it replaces; optional `Superseded by` frontmatter on the old ADR, not strikethroughs in the old text
 
+### build-spec
+
+Turn a product idea into a build-ready package: reviewed key decisions, a build spec with components and a settled/open architecture split, a workflows doc, and a `VERIFICATION.md`, exported to a repo.
+
+**Use when:**
+- Going from a vague or researched idea to something a coding agent can build
+- You want every key decision explicit and reviewable before any code
+
+**Categories covered:**
+- **Workflow** — decisions gate → spec → workflows → verification plan → repo export
+- **Principles** — model drafts, user decides; unconfirmed model defaults stay marked; components with one responsibility each
+
+### slice-build-verify
+
+Build a project slice by slice with independent verification: implement the next slice from the spec, then a separate agent verifies it against `VERIFICATION.md`.
+
+**Use when:**
+- Building from a `build-spec` package (spec, workflows, verification plan)
+- You want an adversarial verifier instead of the builder grading itself
+
+**Categories covered:**
+- **Workflow** — plan against the design, ADRs before code, tests from check ids, fresh-agent verification
+- **Principles** — the component model is binding, do not invent, design changes need human approval
+
 ### Shape-First Workflow
 
 [AI Assisted Developement Documentation](https://ai-workflow.nbaglivo.dev/)
